@@ -9,7 +9,7 @@ function ContactItem({ item }) {
 
     return (
         <Item key={item.id}>
-            {item.name}: {item.phone}
+            {item.name}: {item.number}
             <FrmButton onClick={() => {
                     dispatch(deleteContact(item.id));
                     Notiflix.Notify.info(`Контакт ${item.name} видалений з контактів`);
